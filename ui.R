@@ -4,7 +4,11 @@ shinyUI(fluidPage(
   sidebarLayout(
     sidebarPanel(
       h5(helpText("Most popular keywords in status/group topic  by age groups and gender")),
-      
+      selectInput("method", 
+        label = "Method",
+        choices = c("conditional","scikit"),
+        selected = "conditional"),
+        
       selectInput("text_var", 
         label = "Choose a text category",
         choices = c("Posts/statuses","Group topics"),
@@ -18,7 +22,7 @@ shinyUI(fluidPage(
     
     mainPanel(
       imageOutput("graph"),
-      h6(textOutput("text"))
+      h4(textOutput("text"))
     )
   )
 ))
