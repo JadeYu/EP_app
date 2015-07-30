@@ -45,13 +45,22 @@ shinyUI(fluidPage(
       ),
       conditionalPanel(
       condition = "input.demo == 'GN'",
+      selectInput("style", 
+        label = "Choose a style",
+        choices = c("igraph","Gephi"),
+        selected = "igraph"),
+      
+      conditionalPanel(
+      condition = "input.style == 'igraph'",
       sliderInput("threshold",
       	label="pmi threshold",
       	min=0,max=0.2,value=0.1
       ),
+      
       sliderInput("ngroup",
       	label="Number of groups to be shown",
       	min=10,max=50,value=30
+      )
       )
       ),
       helpText("Codes and pictures can be found on GitHub in:"),
@@ -63,9 +72,13 @@ shinyUI(fluidPage(
       imageOutput("graph")
       ),
       conditionalPanel(
-      condition = "input.demo == 'GN'",
+      condition = "input.demo == 'GN'&input.style != 'Gephi'",
       plotOutput("network")
-      ) 
+      ), 
+      conditionalPanel(
+      condition = "input.style == 'Gephi'",
+      imageOutput("Gephi")
+      )
     )
   )
 ))

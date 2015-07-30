@@ -22,5 +22,14 @@ shinyServer(function(input, output) {
      output$network <- renderPlot({
      		plot_network(pmi,input$ngroup,input$threshold,node_size)
      })
+     
+     output$Gephi <- renderImage({
+         list(src = "betweenessNetwork_f14.png",
+         contentType = 'image/png',
+         width = 600,
+         height = 350,
+         alt = "This category hasn't been done yet.")
+  }, deleteFile = F)
+
   }
 )
