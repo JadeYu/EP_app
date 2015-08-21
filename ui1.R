@@ -1,10 +1,8 @@
 shinyUI(fluidPage(
-  titlePanel("You are what you talk about: Experience project"),
+  titlePanel("People who get you: Experience project"),
   
   sidebarLayout(
     sidebarPanel(
-      h5(helpText("Most popular keywords in status/group topic  by age groups and gender")),
-      
       selectInput("demo", 
         label = "Choose a demo mode",
         choices = c("Word cloud"="WC","Group network"="GN"),
@@ -12,15 +10,12 @@ shinyUI(fluidPage(
         
       conditionalPanel(
       condition = "input.demo == 'WC'",
+      h5(helpText("Most popular keywords in status/group topic  by age groups and gender")),
+      
       selectInput("text_var", 
         label = "Choose a text category",
         choices = c("Posts/statuses"="content","Group topics"="gn"),
         selected = "gn"),
-        
-     # selectInput("method", 
-      #  label = "Method",
-       # choices = c("conditional","scikit"),
-        #selected = "conditional"),
         
       selectInput("category", 
         label = "Category",
@@ -32,7 +27,7 @@ shinyUI(fluidPage(
       selectInput("age", 
         label = "Age groups",
         choices = c("13-23","24-34","35-45","46-56","57-67","68-78"),
-        selected = "13-23")
+        selected = "35-45")
       ),
       
       conditionalPanel(
@@ -40,31 +35,29 @@ shinyUI(fluidPage(
       selectInput("gender", 
         label = "Gender groups",
         choices = c("Male"="M","Female"="F","Transgender"="T"),
-        selected = "M")
+        selected = "T")
       )
       ),
+      
       conditionalPanel(
       condition = "input.demo == 'GN'",
-      selectInput("style", 
-        label = "Choose a style",
-        choices = c("igraph","Gephi"),
-        selected = "igraph"),
+      selectInput("relation",
+      label="Association type",
+      choices=c("Positive"="posi","Negative"="negi"),
+      selected = "posi"),
       
-      conditionalPanel(
-      condition = "input.style == 'igraph'",
       sliderInput("threshold",
       	label="pmi threshold",
-      	min=0,max=0.2,value=0.1
+      	min=-0.35,max=0.35,value=0.2
       ),
-      
+            
       sliderInput("ngroup",
       	label="Number of groups to be shown",
       	min=10,max=50,value=30
       )
-      )
       ),
       helpText("Codes and pictures can be found on GitHub in:"),
-      a("https://github.com/JadeYu/EP_app.git")
+      a(href="https://github.com/JadeYu/EP_app.git","https://github.com/JadeYu/EP_app.git")
         ),
     mainPanel(
       conditionalPanel(
@@ -72,12 +65,8 @@ shinyUI(fluidPage(
       imageOutput("graph")
       ),
       conditionalPanel(
-      condition = "input.demo == 'GN'&input.style != 'Gephi'",
+      condition = "input.demo == 'GN'",
       plotOutput("network")
-      ), 
-      conditionalPanel(
-      condition = "input.style == 'Gephi'",
-      imageOutput("Gephi")
       )
     )
   )

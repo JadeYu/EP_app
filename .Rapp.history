@@ -1,0 +1,27 @@
+pmi=c(0.1,0.9)
+pmi[pmi==0] <- -1#
+		pmi[pmi!=0] <- exp(-log(pmi[pmi!=0]))
+pmi
+pmi=c(0.1,0.9)
+log(pmi)
+getwd9
+getwd()
+read.csv("pmi_matrix.csv",header=T)[,-1]
+pmi = read.csv("pmi_matrix.csv",header=T)[,-1]
+pmi[pmi==0] <- -1#
+		pmi[pmi!=0] <- exp(-log(pmi[pmi!=0]))
+pmi
+pmi = read.csv("pmi_matrix.csv",header=T)[,-1]
+getwd()
+counts = read.table("../ugBinMat_top50_AllData.txt")
+head(counts)
+cooccur = crossprod(counts)
+counts = as.matrix(read.table("../ugBinMat_top50_AllData.txt"))
+cooccur = crossprod(counts)
+head(cooccur)
+for(i in 1:dim(cooccur)[1]){#
+	for(j in 1:dim(cooccur)[2]){#
+		cooccur[i,j] = cooccur[i,j]/(cooccur[i,i]*cooccur[j,j])*dim(cooccur)[1]#
+	}#
+}
+head(cooccur)
