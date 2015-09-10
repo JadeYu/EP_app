@@ -1,0 +1,495 @@
+{
+	"version" : 1,
+	"locale" : "en_US",
+	"platform" : "3.0.2",
+	"metadata" : {
+		"appmode" : "shiny",
+		"primary_rmd" : null,
+		"primary_html" : null,
+		"content_category" : null
+	},
+	"packages" : {
+		"shiny" : {
+			"description" : {
+				"Package" : "shiny",
+				"Type" : "Package",
+				"Title" : "Web Application Framework for R",
+				"Version" : "0.10.1",
+				"Date" : "2014-06-13",
+				"Author" : "RStudio, Inc.",
+				"Maintainer" : "Winston Chang <winston@rstudio.com>",
+				"Description" : "Shiny makes it incredibly easy to build interactive web\n    applications with R. Automatic \"reactive\" binding between inputs and\n    outputs and extensive pre-built widgets make it possible to build\n    beautiful, responsive, and powerful applications with minimal effort.",
+				"License" : "GPL-3",
+				"Depends" : "R (>= 2.14.1), methods",
+				"Imports" : "tools, utils, httpuv (>= 1.2.0), caTools, RJSONIO, xtable,\ndigest, htmltools (>= 0.2.4)",
+				"Suggests" : "datasets, Cairo (>= 1.5-5), testthat, knitr (>= 1.6),\nmarkdown",
+				"URL" : "http://www.rstudio.com/shiny/",
+				"BugReports" : "https://github.com/rstudio/shiny/issues",
+				"Collate" : "'app.R' 'bootstrap-layout.R' 'map.R' 'globals.R' 'utils.R'\n'bootstrap.R' 'cache.R' 'fileupload.R' 'graph.R' 'hooks.R'\n'html-deps.R' 'htmltools.R' 'imageutils.R' 'jqueryui.R'\n'middleware-shiny.R' 'middleware.R' 'priorityqueue.R' 'react.R'\n'reactive-domains.R' 'reactives.R' 'run-url.R' 'server.R'\n'shiny.R' 'shinyui.R' 'shinywrappers.R' 'showcase.R' 'slider.R'\n'tar.R' 'timer.R' 'update-input.R'",
+				"Packaged" : "2014-07-25 19:37:59 UTC; winston",
+				"NeedsCompilation" : "no",
+				"Repository" : "CRAN",
+				"Date/Publication" : "2014-07-26 09:02:32",
+				"Built" : "R 3.0.2; ; 2014-07-27 06:18:18 UTC; unix"
+			}
+		},
+		"igraph" : {
+			"description" : {
+				"Package" : "igraph",
+				"Version" : "0.7.1",
+				"Date" : "2014-04-22",
+				"Title" : "Network analysis and visualization",
+				"Author" : "See AUTHORS file.",
+				"Maintainer" : "Gabor Csardi <csardi.gabor@gmail.com>",
+				"Description" : "Routines for simple graphs and network analysis. igraph can\n  handle large graphs very well and provides functions for generating random\n  and regular graphs, graph visualization, centrality indices and much more.",
+				"Depends" : "methods",
+				"Imports" : "Matrix",
+				"Suggests" : "igraphdata, stats4, rgl, tcltk, graph, ape",
+				"License" : "GPL (>= 2)",
+				"URL" : "http://igraph.org",
+				"SystemRequirements" : "gmp, libxml2",
+				"BugReports" : "https://github.com/igraph/igraph/issues",
+				"Packaged" : "2014-04-22 18:00:26 UTC; gaborcsardi",
+				"NeedsCompilation" : "yes",
+				"Repository" : "CRAN",
+				"Date/Publication" : "2014-04-22 23:08:29",
+				"Built" : "R 3.0.2; x86_64-apple-darwin10.8.0; 2014-04-23 05:45:58 UTC; unix"
+			}
+		},
+		"methods" : {
+			"description" : {
+				"Package" : "methods",
+				"Version" : "3.0.2",
+				"Priority" : "base",
+				"Imports" : "utils",
+				"Title" : "Formal Methods and Classes",
+				"Author" : "R Core Team",
+				"Maintainer" : "R Core Team <R-core@r-project.org>",
+				"Description" : "Formally defined methods and classes for R objects,\n  plus other programming tools, as described in the reference",
+				"References" : "John M. Chambers (2008) ``Software for Data Analysis:\nProgramming with R''; Springer NY.",
+				"License" : "Part of R 3.0.2",
+				"Built" : "R 3.0.2; x86_64-apple-darwin10.8.0; 2013-09-25 11:52:49 UTC; unix"
+			}
+		},
+		"tools" : {
+			"description" : {
+				"Package" : "tools",
+				"Version" : "3.0.2",
+				"Priority" : "base",
+				"Title" : "Tools for Package Development",
+				"Author" : "R Core Team",
+				"Maintainer" : "R Core Team <R-core@r-project.org>",
+				"Description" : "Tools for package development, administration and documentation",
+				"License" : "Part of R 3.0.2",
+				"Built" : "R 3.0.2; x86_64-apple-darwin10.8.0; 2013-09-25 11:51:01 UTC; unix"
+			}
+		},
+		"utils" : {
+			"description" : {
+				"Package" : "utils",
+				"Version" : "3.0.2",
+				"Priority" : "base",
+				"Title" : "The R Utils Package",
+				"Author" : "R Core Team and contributors worldwide",
+				"Maintainer" : "R Core Team <R-core@r-project.org>",
+				"Description" : "R utility functions",
+				"License" : "Part of R 3.0.2",
+				"Built" : "R 3.0.2; x86_64-apple-darwin10.8.0; 2013-09-25 11:51:48 UTC; unix"
+			}
+		},
+		"httpuv" : {
+			"description" : {
+				"Package" : "httpuv",
+				"Type" : "Package",
+				"Title" : "HTTP and WebSocket server library",
+				"Version" : "1.3.2",
+				"Date" : "2014-10-22",
+				"Author" : "RStudio, Inc.",
+				"Copyright" : "RStudio, Inc.; Joyent, Inc.; Nginx Inc.; Igor Sysoev; Niels\nProvos; Internet Systems Consortium, Inc.; Alexander Chemeris",
+				"Maintainer" : "Joe Cheng <joe@rstudio.com>",
+				"Description" : "httpuv provides low-level socket and protocol support for handling\n    HTTP and WebSocket requests directly from within R. It is primarily\n    intended as a building block for other packages, rather than making it\n    particularly easy to create complete web applications using httpuv alone.\n    httpuv is built on top of the libuv and http-parser C libraries, both of\n    which were developed by Joyent, Inc. (See LICENSE file for libuv and\n    http-parser license information.)",
+				"License" : "GPL-3 | file LICENSE",
+				"Depends" : "R (>= 2.15.1), methods",
+				"Imports" : "Rcpp (>= 0.11.0)",
+				"LinkingTo" : "Rcpp",
+				"URL" : "https://github.com/rstudio/httpuv",
+				"SystemRequirements" : "GNU make",
+				"Packaged" : "2014-10-22 19:21:12 UTC; jcheng",
+				"NeedsCompilation" : "yes",
+				"Repository" : "CRAN",
+				"Date/Publication" : "2014-10-23 07:38:13",
+				"Built" : "R 3.0.2; x86_64-apple-darwin10.8.0; 2014-10-23 06:28:13 UTC; unix"
+			}
+		},
+		"caTools" : {
+			"description" : {
+				"Package" : "caTools",
+				"Type" : "Package",
+				"Title" : "Tools: moving window statistics, GIF, Base64, ROC AUC, etc.",
+				"Version" : "1.17.1",
+				"Date" : "2014-04-21",
+				"Author" : "Jarek Tuszynski <jaroslaw.w.tuszynski@saic.com>",
+				"Maintainer" : "Harutyun Khachatryan <kh_harut@yahoo.com>",
+				"Depends" : "R (>= 2.2.0)",
+				"Imports" : "bitops",
+				"Suggests" : "MASS, rpart",
+				"Description" : "Contains several basic utility functions including: moving\n        (rolling, running) window statistic functions, read/write for\n        GIF and ENVI binary files, fast calculation of AUC, LogitBoost\n        classifier, base64 encoder/decoder, round-off-error-free sum\n        and cumsum, etc.",
+				"License" : "GPL-3",
+				"Packaged" : "2014-09-09 21:05:06 UTC; ripley",
+				"NeedsCompilation" : "yes",
+				"Repository" : "CRAN",
+				"Date/Publication" : "2014-09-10 16:22:53",
+				"Built" : "R 3.0.2; x86_64-apple-darwin10.8.0; 2014-09-11 06:40:58 UTC; unix"
+			}
+		},
+		"RJSONIO" : {
+			"description" : {
+				"Package" : "RJSONIO",
+				"Version" : "1.3-0",
+				"Title" : "Serialize R objects to JSON, JavaScript Object Notation",
+				"Description" : "This is a package that allows conversion to and from \n  data in Javascript object notation (JSON) format.\n  This allows R objects to be inserted into Javascript/ECMAScript/ActionScript code\n  and allows R programmers to read and convert JSON content to R objects.\n  This is an alternative to rjson package. Originally, that was too slow for converting large R objects to JSON\n  and was not extensible.  rjson's performance is now similar to this package, and perhaps slightly faster in some cases.\n  This package uses methods and is readily extensible by defining methods for different classes, \n  vectorized operations, and C code and callbacks to R functions for deserializing JSON objects to R. \n  The two packages intentionally share the same basic interface. This package (RJSONIO) has many additional\n  options to allow customizing the generation and processing of JSON content.\n  This package uses libjson rather than implementing yet another JSON parser. The aim is to support\n  other general projects by building on their work, providing feedback and benefit from their ongoing development.",
+				"Note" : "See http://www.json.org/JSON_checker/test.zip for tests. We now\nuse code from the libjson project\n(http://libjson.sourceforge.net).",
+				"License" : "BSD_3_clause + file LICENSE",
+				"Imports" : "methods",
+				"Author" : "Duncan Temple Lang",
+				"Maintainer" : "Duncan Temple Lang <duncan@r-project.org>",
+				"Collate" : "readJSON.R asVars.R isValid.R json.R simpleHandler.R stream.R",
+				"Biarch" : "true",
+				"Packaged" : "2014-07-28 15:19:10 UTC; ripley",
+				"NeedsCompilation" : "yes",
+				"Repository" : "CRAN",
+				"Date/Publication" : "2014-07-28 17:26:19",
+				"Built" : "R 3.0.2; x86_64-apple-darwin10.8.0; 2014-07-29 06:51:41 UTC; unix"
+			}
+		},
+		"xtable" : {
+			"description" : {
+				"Package" : "xtable",
+				"Version" : "1.7-4",
+				"Date" : "2014/08/17",
+				"Title" : "Export tables to LaTeX or HTML",
+				"Author" : "David B. Dahl <dahl@stat.byu.edu>",
+				"Maintainer" : "David Scott <d.scott@auckland.ac.nz>",
+				"Description" : "Coerce data to LaTeX and HTML tables",
+				"URL" : "http://xtable.r-forge.r-project.org/",
+				"Depends" : "R (>= 2.10.0)",
+				"License" : "GPL (>= 2)",
+				"Repository" : "CRAN",
+				"Packaged" : "2014-09-11 22:38:16 UTC; dsco036",
+				"NeedsCompilation" : "no",
+				"Date/Publication" : "2014-09-12 14:30:04",
+				"Built" : "R 3.0.2; ; 2014-09-22 13:14:20 UTC; unix"
+			}
+		},
+		"digest" : {
+			"description" : {
+				"Package" : "digest",
+				"Version" : "0.6.4",
+				"Date" : "$Date: 2013-12-02 21:56:30 -0600 (Mon, 02 Dec 2013) $",
+				"Author" : "Dirk Eddelbuettel <edd@debian.org> with contributions \n by Antoine Lucas, Jarek Tuszynski, Henrik Bengtsson, Simon Urbanek,\n Mario Frasca, Bryan Lewis, Murray Stokely, Hannes Muehleisen and \n Duncan Murdoch.",
+				"Maintainer" : "Dirk Eddelbuettel <edd@debian.org>",
+				"Title" : "Create cryptographic hash digests of R objects",
+				"Description" : "The digest package provides a function 'digest()' for the \n creation of hash digests of arbitrary R objects (using the md5, sha-1, \n sha-256 and crc32 algorithms) permitting easy comparison of R language \n objects, as well as a function 'hmac()' to create hash-based message\n authentication code.\n\n   The md5 algorithm by Ron Rivest is specified in RFC 1321, the sha-1 \n and sha-256 algorithms are specified in FIPS-180-1 and FIPS-180-2, \n and the crc32 algorithm is described in \n ftp://ftp.rocksoft.com/cliens/rocksoft/papers/crc_v3.txt.\n\n   For md5, sha-1, sha-256 and aes, this package uses a small standalone\n implementations that were provided by Christophe Devine. For crc32, code\n from the zlib library is used. For sha-512, an implementation by Aaron\n D. Gifford is used.\n\n   Please note that this package is not meant to be deployed for \n cryptographic purposes for which more comprehensive (and widely \n tested) libraries such as OpenSSL should be used.",
+				"Depends" : "R (>= 2.4.1)",
+				"License" : "GPL-2",
+				"URL" : "http://dirk.eddelbuettel.com/code/digest.html",
+				"Packaged" : "2013-12-03 04:02:00.357418 UTC; edd",
+				"NeedsCompilation" : "yes",
+				"Repository" : "CRAN",
+				"Date/Publication" : "2013-12-03 07:39:12",
+				"Built" : "R 3.0.2; x86_64-apple-darwin10.8.0; 2013-12-04 22:50:51 UTC; unix"
+			}
+		},
+		"htmltools" : {
+			"description" : {
+				"Package" : "htmltools",
+				"Type" : "Package",
+				"Title" : "Tools for HTML",
+				"Version" : "0.2.6",
+				"Date" : "2014-07-30",
+				"Author" : "RStudio, Inc.",
+				"Maintainer" : "Joe Cheng <joe@rstudio.com>",
+				"Description" : "Tools for HTML generation and output",
+				"Depends" : "R (>= 2.14.1)",
+				"Imports" : "utils, digest",
+				"Suggests" : "markdown, testthat",
+				"Enhances" : "knitr",
+				"License" : "GPL (>= 2)",
+				"Packaged" : "2014-09-08 16:45:00 UTC; jcheng",
+				"NeedsCompilation" : "no",
+				"Repository" : "CRAN",
+				"Date/Publication" : "2014-09-08 19:23:28",
+				"Built" : "R 3.0.2; ; 2014-09-09 08:59:04 UTC; unix"
+			}
+		},
+		"bitops" : {
+			"description" : {
+				"Package" : "bitops",
+				"Version" : "1.0-6",
+				"Date" : "2013-08-17",
+				"Author" : "S original by Steve Dutky <sdutky@terpalum.umd.edu> initial R\n        port and extensions by Martin Maechler; revised and modified\n        by Steve Dutky",
+				"Maintainer" : "Martin Maechler <maechler@stat.math.ethz.ch>",
+				"Title" : "Bitwise Operations",
+				"Description" : "Functions for bitwise operations on integer vectors.",
+				"License" : "GPL (>= 2)",
+				"Packaged" : "2013-08-17 15:58:57 UTC; maechler",
+				"NeedsCompilation" : "yes",
+				"Repository" : "CRAN",
+				"Date/Publication" : "2013-08-17 21:10:34",
+				"Built" : "R 3.0.2; x86_64-apple-darwin10.8.0; 2014-01-09 19:07:26 UTC; unix"
+			}
+		},
+		"Rcpp" : {
+			"description" : {
+				"Package" : "Rcpp",
+				"Title" : "Seamless R and C++ Integration",
+				"Version" : "0.11.1",
+				"Date" : "2014-03-12",
+				"Authors@R" : "c(person(\"Dirk\", \"Eddelbuettel\", role = c(\"aut\", \"cre\"), email = \"edd@debian.org\" ),\n             person(\"Romain\", \"Francois\", role = \"aut\", email = \"romain@r-enthusiasts.com\"),\n             person(\"JJ\", \"Allaire\", role = \"ctb\", email = \"jj.allaire@gmail.com\"),\n             person(\"John\", \"Chambers\", role = \"ctb\", email = \"jmc@r-project.org\"),\n             person(\"Douglas\", \"Bates\", role = \"ctb\", email = \"bates@stat.wisc.edu\"),\n             person(\"Kevin\", \"Ushey\", role = \"ctb\", email = \"kevinushey@gmail.com\"))",
+				"Description" : "The Rcpp package provides R functions as well as a C++ library\n which facilitate the integration of R and C++.\n\n    R data types (SEXP) are matched to C++ objects in a class hierarchy.  All R\n types are supported (vectors, functions, environment, etc ...)  and each\n type is mapped to a dedicated class. For example, numeric vectors are\n represented as instances of the Rcpp::NumericVector class, environments are\n represented as instances of Rcpp::Environment, functions are represented as\n Rcpp::Function, etc ... The \"Rcpp-introduction\" vignette provides a good\n entry point to Rcpp.\n\n    Conversion from C++ to R and back is driven by the templates Rcpp::wrap\n and Rcpp::as which are highly flexible and extensible, as documented\n in the \"Rcpp-extending\" vignette.\n\n    Rcpp also provides Rcpp modules, a framework that allows exposing\n C++ functions and classes to the R level. The \"Rcpp-modules\" vignette\n details the current set of features of Rcpp-modules.\n\n    Rcpp includes a concept called Rcpp sugar that brings many R functions\n into C++. Sugar takes advantage of lazy evaluation and expression templates\n to achieve great performance while exposing a syntax that is much nicer\n to use than the equivalent low-level loop code. The \"Rcpp-sugar\" vignette\n gives an overview of the feature.\n\n    Rcpp attributes provide a high-level syntax for declaring C++\n functions as callable from R and automatically generating the code\n required to invoke them.  Attributes are intended to facilitate both\n interactive use of C++ within R sessions as well as to support R\n package development. Attributes are built on top of Rcpp modules and\n their implementation is based on previous work in the inline package.\n\n    Many examples are included, and around 891 unit tests in 430 unit\n test functions provide additional usage examples.\n\n    An earlier version of Rcpp, containing what we now call the 'classic Rcpp\n API' was written during 2005 and 2006 by Dominick Samperi.  This code has\n been factored out of Rcpp into the package RcppClassic, and it is still\n available for code relying on the older interface. New development should\n always use this Rcpp package instead.\n\n    Additional documentation is available via the paper by Eddelbuettel and\n Francois (2011, JSS) paper and the book by Eddelbuettel (2013, Springer);\n see 'citation(\"Rcpp\")' for details.",
+				"Depends" : "R (>= 3.0.0)",
+				"Imports" : "methods",
+				"Suggests" : "RUnit, inline, rbenchmark, highlight",
+				"VignetteBuilder" : "highlight",
+				"URL" : "http://www.rcpp.org, http://dirk.eddelbuettel.com/code/rcpp.html,\nhttps://github.com/RcppCore/Rcpp",
+				"License" : "GPL (>= 2)",
+				"BugReports" : "https://github.com/RcppCore/Rcpp/issues",
+				"MailingList" : "Please send questions and comments regarding Rcpp to\nrcpp-devel@lists.r-forge.r-project.org",
+				"Packaged" : "2014-03-14 01:27:31.10566 UTC; edd",
+				"Author" : "Dirk Eddelbuettel [aut, cre],\n  Romain Francois [aut],\n  JJ Allaire [ctb],\n  John Chambers [ctb],\n  Douglas Bates [ctb],\n  Kevin Ushey [ctb]",
+				"Maintainer" : "Dirk Eddelbuettel <edd@debian.org>",
+				"NeedsCompilation" : "yes",
+				"Repository" : "CRAN",
+				"Date/Publication" : "2014-03-14 09:24:45",
+				"Built" : "R 3.0.2; x86_64-apple-darwin10.8.0; 2014-03-15 05:40:47 UTC; unix"
+			}
+		},
+		"Matrix" : {
+			"description" : {
+				"Package" : "Matrix",
+				"Version" : "1.1-4",
+				"Date" : "2014-06-14",
+				"Priority" : "recommended",
+				"Title" : "Sparse and Dense Matrix Classes and Methods",
+				"Author" : "Douglas Bates <bates@stat.wisc.edu> and Martin Maechler",
+				"Maintainer" : "Martin Maechler <mmaechler+Matrix@gmail.com>",
+				"Contact" : "Doug and Martin <Matrix-authors@R-project.org>",
+				"Description" : "Classes and methods for dense and sparse matrices and\n    operations on them using LAPACK and SuiteSparse.",
+				"Depends" : "R (>= 2.15.2), methods",
+				"Imports" : "graphics, grid, stats, utils, lattice",
+				"Suggests" : "expm, MASS",
+				"Enhances" : "MatrixModels, graph, SparseM, sfsmisc",
+				"Encoding" : "UTF-8",
+				"LazyData" : "no",
+				"LazyDataNote" : "not possible, since we use data/*.R *and* our classes",
+				"ByteCompile" : "yes",
+				"BuildResaveData" : "no",
+				"License" : "GPL (>= 2)",
+				"LicenseNote" : "The Matrix package includes libraries AMD, CHOLMOD,\nCOLAMD, CSparse and SPQR from the SuiteSparse collection of Tim\nDavis.  All sections of that code are covered by the GPL or\nLGPL licenses.  See the directory doc/UFsparse for details.",
+				"URL" : "http://Matrix.R-forge.R-project.org/",
+				"Packaged" : "2014-06-14 16:22:31 UTC; maechler",
+				"NeedsCompilation" : "yes",
+				"Repository" : "CRAN",
+				"Date/Publication" : "2014-06-15 20:26:41",
+				"Built" : "R 3.0.2; x86_64-apple-darwin10.8.0; 2014-06-16 05:45:42 UTC; unix"
+			}
+		},
+		"graphics" : {
+			"description" : {
+				"Package" : "graphics",
+				"Version" : "3.0.2",
+				"Priority" : "base",
+				"Title" : "The R Graphics Package",
+				"Author" : "R Core Team and contributors worldwide",
+				"Maintainer" : "R Core Team <R-core@r-project.org>",
+				"Description" : "R functions for base graphics",
+				"Imports" : "grDevices",
+				"License" : "Part of R 3.0.2",
+				"Built" : "R 3.0.2; x86_64-apple-darwin10.8.0; 2013-09-25 11:52:08 UTC; unix"
+			}
+		},
+		"grid" : {
+			"description" : {
+				"Package" : "grid",
+				"Version" : "3.0.2",
+				"Priority" : "base",
+				"Title" : "The Grid Graphics Package",
+				"Author" : "Paul Murrell <paul@stat.auckland.ac.nz>",
+				"Maintainer" : "R Core Team <R-core@r-project.org>",
+				"Description" : "A rewrite of the graphics layout capabilities, plus some\n  support for interaction",
+				"Imports" : "grDevices",
+				"Suggests" : "lattice",
+				"License" : "Part of R 3.0.2",
+				"Built" : "R 3.0.2; x86_64-apple-darwin10.8.0; 2013-09-25 11:53:18 UTC; unix"
+			}
+		},
+		"stats" : {
+			"description" : {
+				"Package" : "stats",
+				"Version" : "3.0.2",
+				"Priority" : "base",
+				"Title" : "The R Stats Package",
+				"Author" : "R Core Team and contributors worldwide",
+				"Maintainer" : "R Core Team <R-core@r-project.org>",
+				"Description" : "R statistical functions",
+				"License" : "Part of R 3.0.2",
+				"Built" : "R 3.0.2; x86_64-apple-darwin10.8.0; 2013-09-25 11:52:15 UTC; unix"
+			}
+		},
+		"lattice" : {
+			"description" : {
+				"Package" : "lattice",
+				"Version" : "0.20-23",
+				"Date" : "2013/08/21",
+				"Priority" : "recommended",
+				"Title" : "Lattice Graphics",
+				"Author" : "Deepayan Sarkar <deepayan.sarkar@r-project.org>",
+				"Maintainer" : "Deepayan Sarkar <deepayan.sarkar@r-project.org>",
+				"Description" : "Lattice is a powerful and elegant high-level data\n  visualization system, with an emphasis on multivariate data, that is\n  sufficient for typical graphics needs, and is also flexible enough\n  to handle most nonstandard requirements.  See ?Lattice for an\n  introduction.",
+				"Depends" : "R (>= 2.15.1)",
+				"Suggests" : "KernSmooth, MASS",
+				"Imports" : "grid, grDevices, graphics, stats, utils",
+				"Enhances" : "chron",
+				"LazyLoad" : "yes",
+				"LazyData" : "yes",
+				"License" : "GPL (>= 2)",
+				"URL" : "http://lattice.r-forge.r-project.org/",
+				"Packaged" : "2013-08-21 09:46:57 UTC; deepayan",
+				"NeedsCompilation" : "yes",
+				"Repository" : "CRAN",
+				"Date/Publication" : "2013-08-21 18:16:22",
+				"Built" : "R 3.0.2; x86_64-apple-darwin10.8.0; 2013-09-25 11:53:56 UTC; unix"
+			}
+		},
+		"grDevices" : {
+			"description" : {
+				"Package" : "grDevices",
+				"Version" : "3.0.2",
+				"Priority" : "base",
+				"Title" : "The R Graphics Devices and Support for Colours and Fonts",
+				"Author" : "R Core Team and contributors worldwide",
+				"Maintainer" : "R Core Team <R-core@r-project.org>",
+				"Description" : "Graphics devices and support for base and grid graphics",
+				"License" : "Part of R 3.0.2",
+				"Built" : "R 3.0.2; x86_64-apple-darwin10.8.0; 2013-09-25 11:52:02 UTC; unix"
+			}
+		}
+	},
+	"files" : {
+		".Rapp.history" : {
+			"checksum" : "b251e30522ed3c2279cb0a60c89ddadf"
+		},
+		"F_content_conditional.png" : {
+			"checksum" : "47a8a6c23fd88ab83feaa787a7a24d72"
+		},
+		"get_pmi_matrx.R" : {
+			"checksum" : "decc091b976d644b318e345a479c5a00"
+		},
+		"negPMIGraphNetwork.pdf" : {
+			"checksum" : "e0ba95168bd51e8470845e2c9b2bcd78"
+		},
+		"negPMIGraphNetwork.png" : {
+			"checksum" : "76950c2f758f3c2551e2bc262adc2205"
+		},
+		"negPMINetwork.png" : {
+			"checksum" : "ebe171bfe0b83d084fc856b54c9548d6"
+		},
+		"network_plotting.R" : {
+			"checksum" : "729b811e72de42c8215fb02ac4382f7d"
+		},
+		"node_weight.csv" : {
+			"checksum" : "dfdb06c02f56ae077053b1352a5864a5"
+		},
+		"pmi_matrix.csv" : {
+			"checksum" : "926dd70cafe13d1e8dcd6b3fca5d7ee5"
+		},
+		"posPMIGraphNetwork.pdf" : {
+			"checksum" : "b5cb0a808575385d19270bdcab6efa94"
+		},
+		"posPMIGraphNetwork.png" : {
+			"checksum" : "640fb3a811b20df38d09fbd5e969aef2"
+		},
+		"posPMINetwork.png" : {
+			"checksum" : "d120fc1c387b9a0450b5fedd3f6900d2"
+		},
+		"server.R" : {
+			"checksum" : "c4edada594e4fe703542cb1c2f9c9a3e"
+		},
+		"shortcut_names.csv" : {
+			"checksum" : "344bd7d501409010f05006499239f138"
+		},
+		"Top50group_names.csv" : {
+			"checksum" : "d538c5160c02f507f81dd77532db8f7c"
+		},
+		"ui.R" : {
+			"checksum" : "c44842f72fa042a50d92e0b10aef0375"
+		},
+		"WC_graphs/13-23_content_conditional.png" : {
+			"checksum" : "a3cdd314cdc3c4f863fe4a75634c4f51"
+		},
+		"WC_graphs/13-23_gn_conditional.png" : {
+			"checksum" : "6c34dad620699222bef1047ed8e46e01"
+		},
+		"WC_graphs/13-23_gn_scikit.png" : {
+			"checksum" : "e9d64ade543b576982ce29b0d013ba30"
+		},
+		"WC_graphs/24-34_content_conditional.png" : {
+			"checksum" : "06c8758ed7e7a856d7834997cfcfded0"
+		},
+		"WC_graphs/24-34_gn_conditional.png" : {
+			"checksum" : "405f0ff730b21b25e793ac24894239ca"
+		},
+		"WC_graphs/24-34_gn_scikit.png" : {
+			"checksum" : "dac379ca19de4fab3db3322b9f0ef4c5"
+		},
+		"WC_graphs/35-45_content_conditional.png" : {
+			"checksum" : "3be9590667a97880173144596d932cac"
+		},
+		"WC_graphs/35-45_gn_conditional.png" : {
+			"checksum" : "70d42501dd900b67d31514e8aa69f580"
+		},
+		"WC_graphs/46-56_content_conditional.png" : {
+			"checksum" : "5593560dfd1c77612136b60bfd713cc7"
+		},
+		"WC_graphs/46-56_gn_conditional.png" : {
+			"checksum" : "b5009e0d807cf35f042095829aae0f0f"
+		},
+		"WC_graphs/57-67_content_conditional.png" : {
+			"checksum" : "a06c500eda0e52ac9b3753818f0d34ec"
+		},
+		"WC_graphs/57-67_gn_conditional.png" : {
+			"checksum" : "2cfd333dbac202d5a629cc4bb3e7e2b7"
+		},
+		"WC_graphs/68-78_content_conditional.png" : {
+			"checksum" : "fbd540fe9b63630e2289e36797be288f"
+		},
+		"WC_graphs/68-78_gn_conditional.png" : {
+			"checksum" : "03adcb9b93763eea6ebe428a317f6289"
+		},
+		"WC_graphs/F_content_conditional.png" : {
+			"checksum" : "47a8a6c23fd88ab83feaa787a7a24d72"
+		},
+		"WC_graphs/F_gn_conditional.png" : {
+			"checksum" : "c893b30d531e1183cad76f869b87b0fb"
+		},
+		"WC_graphs/M_content_conditional.png" : {
+			"checksum" : "d928e03b8e05d57699790da17957d9b4"
+		},
+		"WC_graphs/M_gn_conditional.png" : {
+			"checksum" : "0c581f8b55c379004a581bbbfa69f3d9"
+		},
+		"WC_graphs/M_gn_scikit.png" : {
+			"checksum" : "581fbe471a3ff40302c5ac5762e2dcee"
+		},
+		"WC_graphs/T_content_conditional.png" : {
+			"checksum" : "24d8d7290a822ab6c2a1afd73dbebe7d"
+		},
+		"WC_graphs/T_gn_conditional.png" : {
+			"checksum" : "94c02853fe34672e43d6552d655dbbf4"
+		},
+		"WC_graphs/T_gn_scikit.png" : {
+			"checksum" : "5142607e3b957fa6bb81f3005837212d"
+		}
+	},
+	"users" : null
+}
